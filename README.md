@@ -8,7 +8,7 @@ Here are some take-home assignment questions designed to help you learn and appl
      - Convert the `Procurement_Date` column to a proper datetime format.
      - Calculate the total value of each raw material procurement (`Quantity_Ordered * Unit_Price`) and add it as a new column called `Total_Cost`.
      - Filter the data for records where the procurement date is in 2023, and calculate the average procurement quantity for each material type.
-     
+
    **Learning Goals**:
    - Data cleaning
    - Handling missing data
@@ -23,13 +23,13 @@ Here are some take-home assignment questions designed to help you learn and appl
      - Create a summary table that shows the total sales amount and the total quantity sold for each `Product_ID`.
      - Visualize the sales trend over time (for a period of 6 months). Use a line chart to show the total sales amount by month.
      - Which product has the highest total sales and which has the lowest?
-     - Create a bar chart to visualize the total sales for each customer.
+     - Create a bar chart to visualize the total sales for each customer. Make sure to break down the sales by customer `Location` and `Gender`.
    
    **Learning Goals**:
    - Data aggregation
    - Time-series analysis
    - Data visualization with Excel charts (Bar, Line)
-   - Customer segmentation based on sales performance
+   - Customer segmentation based on demographics
 
 ---
 
@@ -42,7 +42,7 @@ Here are some take-home assignment questions designed to help you learn and appl
        - Total units produced per product category
        - Average units produced per day
        - Number of days to complete production per product
-  
+   
    **Learning Goals**:
    - Identifying KPIs
    - Calculating production efficiency
@@ -56,7 +56,7 @@ Here are some take-home assignment questions designed to help you learn and appl
      - Prepare the data by merging `sales_data` with `manufacturing_data` on `Product_ID`.
      - Choose a predictive model (e.g., linear regression) to predict future sales based on the number of units produced, unit price, and the past sales data.
      - Visualize the predicted sales for the next quarter and compare it with actual sales (if available).
-     
+
    **Learning Goals**:
    - Time-series forecasting
    - Model training and testing
@@ -85,7 +85,7 @@ Here are some take-home assignment questions designed to help you learn and appl
      - Create a summary report showing the average unit cost for each product category.
      - Find the product with the highest and lowest unit cost.
      - Create a pie chart showing the proportion of products in each category (e.g., Engine Parts, Body Parts, etc.).
-   
+
    **Learning Goals**:
    - Master data analysis
    - Aggregating data by category
@@ -93,31 +93,30 @@ Here are some take-home assignment questions designed to help you learn and appl
 
 ---
 
-### **7. Advanced Data Analysis: Correlation and Regression (Combining Multiple Tables)**
+### **7. Data Aggregation & Combining Data (Joining Tables with VLOOKUP)**
+   - **Question**:  
+     Using the `sales_data` and `master_data` tables:
+     - Use the `Product_ID` to join both tables and extract the `Product_Name` and `Product_Category` for each sale.
+     - Create a table showing total sales by `Product_Category` and the total quantity sold per category. (Use VLOOKUP or a similar function to match the `Product_ID` to the `Product_Name` and `Product_Category`).
+
+   **Learning Goals**:
+   - Joining tables (VLOOKUP)
+   - Data aggregation
+   - Extracting insights using combined data
+
+---
+
+### **8. Advanced Data Analysis: Correlation and Regression (Combining Multiple Tables)**
    - **Question**:  
      Combine the `sales_data`, `manufacturing_data`, and `rawmaterial_proc_data` tables. Answer the following:
      - Use correlation analysis to explore the relationship between procurement quantity, units produced, and sales amount.
      - Conduct a simple linear regression to predict sales amount based on units produced.
      - What insights can you derive from the correlation and regression analysis?
-   
+
    **Learning Goals**:
    - Merging data from different sources
    - Correlation and regression analysis
    - Multivariable analysis using Excel
-
----
-
-### **8. Data Visualization and Interactive Dashboards (Overall Reporting)**
-   - **Question**:  
-     Using all the tables (`sales_data`, `manufacturing_data`, `rawmaterial_proc_data`, `quality_data`, and `master_data`), create an interactive dashboard that allows stakeholders to:
-     - Filter by product category.
-     - View total sales, units produced, and defect rates by product.
-     - Compare sales with production efficiency (units produced per day).
-   
-   **Learning Goals**:
-   - Data integration
-   - Creating interactive reports in Excel
-   - Using slicers and pivot tables for interactive dashboards
 
 ---
 
@@ -133,6 +132,32 @@ Here are some take-home assignment questions designed to help you learn and appl
    - Synthesizing data insights
    - Actionable recommendations
    - Report writing for decision-making
+
+---
+
+### **10. Advanced Data Visualization and Interactive Dashboards (Overall Reporting)**
+   - **Question**:  
+     Using all the tables (`sales_data`, `manufacturing_data`, `rawmaterial_proc_data`, `quality_data`, and `master_data`), create an interactive dashboard that allows stakeholders to:
+     - Filter by `Product_Category`, `Customer_Gender`, and `Customer_Location`.
+     - View total sales, units produced, and defect rates by product.
+     - Compare sales with production efficiency (units produced per day).
+   
+   **Learning Goals**:
+   - Data integration
+   - Creating interactive reports in Excel
+   - Using slicers and pivot tables for interactive dashboards
+
+---
+
+### **11. Advanced Excel Functions: VLOOKUP, INDEX, MATCH**
+   - **Question**:  
+     Use the `sales_data` table and `customer_demographics` table to:
+     - Find the `Customer_Age` and `Customer_Gender` for a specific `Sale_ID` using VLOOKUP.
+     - Use `INDEX` and `MATCH` to retrieve the `Location` of a customer based on `Customer_ID` and show it alongside the sales amount.
+
+   **Learning Goals**:
+   - Mastering Excel functions (VLOOKUP, INDEX, MATCH)
+   - Efficient data retrieval and manipulation
 
 ---
 
