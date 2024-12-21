@@ -136,4 +136,4 @@ Here are some take-home assignment questions designed to help you learn and appl
 
 ---
 
-These questions help cover a wide range of concepts from data preprocessing to predictive modeling and process optimization, using the provided synthetic data. The goal is to apply both theoretical knowledge and practical skills to solve real-world business problems. Let me know if you need further clarification on any of the tasks!
+These questions help cover a wide range of concepts from data preprocessing to predictive modeling and process optimization, using the provided synthetic data. The goal is to apply both theoretical knowledge and practical skills to solve real-world business problems. Happy Learning!
