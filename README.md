@@ -1,4 +1,4 @@
-Here are some take-home assignment questions designed to help you learn and apply key data analytics concepts using the some data. These questions cover various aspects such as data cleaning, analysis, visualization, predictive modeling, and process optimization.
+Here are some take-home assignment questions designed to help you learn and apply key data analytics concepts using some synthetic data. These questions cover various aspects such as data cleaning, analysis, visualization, predictive modeling, and process optimization.
 
 ### **1. Data Cleaning & Preprocessing (Raw Material Procurement Data)**
    - **Question**:  
